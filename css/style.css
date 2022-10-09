@@ -1,0 +1,777 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.header {
+    width: 100%;
+    background-size: cover;
+    background-color: #1f2937;
+}
+
+.masthead {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #1f2937;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#particles-js {
+    width: 99%;
+    height: 99vh;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-bar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #14b8a6;
+    text-transform: capitalize;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav-links a:after {
+    content: "";
+    position: absolute;
+    background-color: #14b8a6;
+    height: 2px;
+    width: 0;
+    left: 4px;
+    bottom: -7px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover:after {
+    width: 90%;
+}
+
+.nav-links a:hover {
+    color: #ECF0F1;
+    transition: all 0.5 ease;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #94a3b8;
+    transition: all 0.3s ease;
+
+}
+
+.home-page {
+    padding-top: 256px;
+}
+
+.name-home {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    color: #ECF0F1;
+    font-weight: 900;
+}
+
+#Im {
+    font-size: 25px;
+    color: #ECF0F1;
+}
+
+.auto-type {
+    font-size: 25px;
+    color: #ECF0F1;
+    position: relative;
+}
+
+.auto-type::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #35D574;
+} 
+
+.img-fluid {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 800px;
+    top: 150px;
+    border: 10px solid #334155;
+    border-radius: 100%;
+}
+
+.profile-img {
+    display: none;
+}
+
+.follow-name {
+    margin-top: 20px;
+}
+
+.follow-me {
+    background-color: #4BE086;
+    color: #334155;
+    border-radius: 5px;
+    padding: 4px 10px;
+    width: 100px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.follow-me::before {
+    content: "";
+    position: absolute;
+    top: -2%;
+    left: -2%;
+    border: 1px solid #48C9B0;
+    height: 105%;
+    width: 105%;
+    border-radius: 0.6rem;
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    transform: rotate(-3.5deg);
+    -webkit-box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+    box-shadow: 0 8px 15pxrgba(0,0,0,.1);
+}
+
+.social-media {
+    position: relative;
+    top: -3.3rem;
+    margin-left: 7.5rem;
+}
+
+.link {
+    position: relative;
+    border: none;
+    color: #334155;
+    z-index: 1;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icon {
+    background-color: #48C9B0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+    transition: .3s;
+}
+
+.social-icon::before {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    border: 1px solid #0c6;
+    background: transparent;
+    height: 104%;
+    width: 104%;
+    border-radius: 4rem;
+    z-index: -1;
+    -webkit-box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+}
+
+.social-icon:hover {
+    color: black;
+    background-color: #4BE086;
+}
+
+
+
+/* middle-container */
+
+.middle-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 450vh;
+    background-color: #F8FDFE;
+    box-sizing: border-box;
+}
+
+.header-page {
+    position: relative;
+    font-weight: bold;
+    color: #334155;
+    padding-top: 3rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header-page:after {
+    content: "";
+    position: absolute;
+    background-color: #48C9B0;
+    height: .1rem;
+    width: 4.5rem;
+    left: 0;
+    bottom: -6px;
+}
+
+/* #### ABOUT PAGE #### */
+
+.about-p { 
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.personal-info {
+    margin-top: 30px;
+}
+
+.profile-info-img {
+    height: 20rem;
+    width: 17rem;
+    float: left;
+    margin: 10px 30px 0 auto;
+}
+.personal-text {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 7px;
+    color: #1f2937;
+}
+
+.row ul {
+    padding-left: 0;
+}
+
+.row li {
+    list-style: none;
+ }
+
+.row ul li i {
+    color: #48C9B0;
+    margin-right: 6px;
+    line-height: 2;
+ }
+
+ strong {
+    color: #334155;
+    margin-right: 5px;
+ }
+
+ .personal-p { 
+    text-align: justify;
+}
+
+.resume-info {
+    margin-top: 25px;
+}
+
+.skill-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2937;
+    padding-top: 3rem;
+    letter-spacing: 1px;
+}
+
+
+/* #### SKILL PAGE #### */
+
+.skill {
+    background-color: #EEF8FC;
+    margin-top: 4rem;
+}
+
+.skills {
+    padding: .7rem 0;
+}
+
+.skills .title {
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2937;
+    
+}
+
+.skills .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.2rem;
+}
+
+.skills .item {
+    padding: 0.7rem 0 auto .3rem;
+    margin: 0.3rem 0;
+}
+
+.skills .item-text {
+    font-weight: 600;
+}
+
+.skills .item .item-text .val {
+    float: right;
+}
+
+.skills .progress-bar-wrap {
+    margin: 0.5rem 0;
+    border-radius: 3px;
+    height: 12px;
+    width: 100%;
+    background-color: #D2ECDC;
+}
+
+.skills .progress-bar {
+    height: 100%;
+    background-color: #35D574;
+    border-radius: 3px;
+}
+
+.skills .progress-bar.w-35 {
+    width: 35%;
+}
+.skills .progress-bar.w-70 {
+    width: 70%;
+}
+.skills .progress-bar.w-40 {
+    width: 40%;
+}
+.skills .progress-bar.w-20 {
+    width: 20%;
+}
+.skills .progress-bar.w-10 {
+    width: 10%;
+}
+.skills .progress-bar.w-15 {
+    width: 15%;
+}
+
+
+/* #### EDUCATION and EXPERIENCE #### */
+
+.education {
+    margin-top: 4rem;
+}
+
+.education .title {
+    font-family: 'Montserrat', sans-serif;
+    color: #1f2937;
+}
+
+.education .row {
+    margin-top: 1.9rem;
+}
+
+.education .attainment {
+    margin-left: 4rem;
+}
+
+.education .experience-page {
+    margin-left: 5rem;
+}
+
+.education .experience-page .title .work {
+    display: none;
+}
+
+.education .education-experience-item {
+    padding-left: 2rem;
+    border-left: 2px solid #A1A7B0;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.education .education-experience-item h4 {
+    position: relative;
+    top: -6px;
+    font-family: 'Kanit', sans-serif;
+    color: #1f2937;
+}
+
+.education .education-experience-item .highschool {
+    padding-top: .4rem;
+}
+
+.education .education-experience-item h5 {
+    position: relative;
+    top: -6px;
+}
+
+.education .education-experience-item .date {
+    font-size: 16px;
+    background-color: #E8FBEF;
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    padding: .2rem;
+    border-radius: 20px;
+}
+
+.education .education-experience-item::before {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid #48C9B0;
+    border-radius: 50%;
+    left: -9px;
+    background-color: #f0fffd;
+}
+
+.education .education-experience-item ul li {
+    padding-left: 0.5rem;
+}
+
+.education .education-experience-item ul li i{
+    color: #1f2937;
+    font-size: 6px;
+    position: relative;
+    top: -3px;
+}
+
+/* #### CONTACTS #### */
+
+.contact .title {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3rem;
+}
+
+.contact .info {
+    padding: 30px;
+    margin-top: 2rem;
+    background: #F8FDFE;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.contact .info i {
+    height: 3rem;
+    width: 3rem;
+    font-size: 20px;
+    background: #D9FBE6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    color: #65D890;
+    transition: .5s;
+}
+
+.contact .info i:hover {
+    background: #65D890;
+    color: #F8FDFE;;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 65px;
+    color: #1f2937;
+    font-family: 'Kanit', sans-serif;
+}
+
+.contact .info p {
+    padding: 0 0 0 65px;
+}
+
+.contact .php-email-form {
+    padding: 30px;
+    margin-top: 2rem;
+    background: #F8FDFE;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.contact .php-email-form input {
+    height: 44px;
+}
+
+.contact .php-email-form textarea {
+    height: 17.2rem;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form label {
+    padding-bottom: 8px;
+}
+
+label {
+    display: inline-block;
+}
+
+.contact .php-email-form .form-group {
+    margin-bottom: 20px;
+}
+
+.my-3 {
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background-color: #F8FDFE;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: white;
+    background: rgba(240, 9, 9, 0.644)(240, 9, 9)(219, 59, 59);
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: white;
+    background-color: #35D574;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .text-center .btn {
+    color: white;
+    background-color: #4CCB7B;
+}
+
+
+
+/* #### FOOTER #### */
+.footer {
+    height: 13vh;
+    width: 100%;
+    background-size: cover;
+    background: #1f2937;
+}
+
+.footer .row p {
+    color: white;
+    margin-top: 1.3rem;
+    font-size: 14px;
+}
+
+.footer .row .info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .row span {
+    font-weight: 600;
+}
+
+.footer .row .develop {
+    margin-top: -.8rem;
+}
+
+.footer .row .developby {
+    color: #14b8a6;
+    font-size: 14px;
+}
+
+
+
+/* media, mobile */
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+
+    .img-fluid {
+        left: 38rem;
+        display: none;
+    }
+
+    .education .experience-page {
+        margin-left: 4.7rem;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: hsl(0 0% 10% / 0.5);
+        backdrop-filter: blur(1rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links a {
+        font-weight: 600;
+        color: white;
+    }
+
+    .nav-links a:hover {
+        color: #12E969;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    /* middle-container */
+
+    .middle-container {
+        height: 820vh;
+    }
+
+    .personal-info {
+        margin-top: 0;
+    }
+
+    .profile-info-img {
+        float: none;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .personal-text {
+        padding-top: 15px;
+        color: black;
+        letter-spacing: 1px;
+    }
+
+    .second-p {
+        position: relative;
+        top: -17px;
+    }
+
+    .personal-p {
+        position: relative;
+        top: -17px
+    }
+
+
+    /* #### SKILL PAGE #### */
+    .skill {
+        margin-top: 3.5rem;
+    }
+
+    .skills .row {
+        display: flex;
+    }
+
+    /* #### EDUCATION AND EXPERIENCE PAGE #### */
+    .education {
+        margin-top: 3rem;
+    }
+
+    .education .attainment {
+        display: none;
+    }
+
+    .education .experience-page {
+        margin: 0;
+    }
+
+    .education .experience-page .title .work {
+        display: flex;
+        position: relative;
+        left: -12px;
+        margin-top: 1.6rem;
+        padding-bottom: 1.7rem;
+    }
+
+    .education .education-experience-item .highschool {
+        padding-top: 5px;
+    }
+
+    .education .education-experience-item .date {
+        width: 45%;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+/* animations */
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
